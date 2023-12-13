@@ -1,15 +1,15 @@
 {
-  "name": "uoc-boilerplate",
+  "name": "tenis",
   "version": "3.7.0",
-  "private": true,
-  "description": "Boilerplate for Advanced HTML/CSS Tools UOC students",
+  "description": "Web para el torneillo amistoso de la Federación de Tenis Terrassa Independiente",
   "scripts": {
-    "parcel:serve": "parcel src/index.html -p 8123 --target web --open",
+    "parcel:serve": "parcel src/index.html -p 8123 --target web",
     "parcel:build": "parcel build src/index.html --target web --no-source-maps --no-cache",
     "clean": "rimraf dist .cache .cache-loader .parcel-cache",
     "dev": "npm-run-all clean parcel:serve",
-    "build": "npm-run-all clean parcel:build",
-    "test": "echo 'Everything is working as expected ✅\nStart working on your project by running \\033[1mnpm run dev\\033[0m'"
+    "build": "npm-run-all clean stylelint parcel:build",
+    "test": "echo 'Everything is working as expected ✅\nStart working on your project by running \\033[1mnpm run dev\\033[0m'",
+    "stylelint": "stylelint src/**/*.scss"
   },
   "web": "dist/index.html",
   "targets": {
@@ -21,27 +21,22 @@
       }
     }
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/uoc-advanced-html-css/uoc-boilerplate.git"
-  },
-  "author": {
-    "name": "Jordi Tarrida",
-    "email": "jorditarrida@uoc.edu"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/uoc-advanced-html-css/uoc-boilerplate/issues"
-  },
-  "homepage": "https://github.com/uoc-advanced-html-css/uoc-boilerplate#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.9.3",
     "autoprefixer": "^10.4.15",
-    "npm-run-all": "^4.1.5",
     "parcel": "^2.9.3",
     "postcss-preset-env": "^9.1.1",
     "posthtml-include": "^1.7.4",
     "rimraf": "^5.0.1",
-    "sharp": "0.31.1"
+    "sharp": "^0.33.0"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.2",
+    "font-awesome": "^4.7.0",
+    "npm-run-all": "^4.1.5",
+    "stylelint": "^15.11.0",
+    "stylelint-config-recommended-scss": "^13.1.0",
+    "stylelint-scss": "^5.3.1"
   }
 }

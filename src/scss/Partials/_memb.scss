@@ -1,0 +1,37 @@
+#miembros {
+    padding-top: 10cqh;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-row: 100% 100%;
+    align-content: center;
+    text-align: center;
+}
+
+.mem-1 {
+    @include grid-it();
+}
+
+.mem-2 {
+    @include grid-it();
+}
+
+.mem-3 {
+    @include grid-it();
+}
+
+.mem-4 {
+    @include grid-it();
+}
+
+.mem-5 {
+    @include grid-it();
+}
+
+.mem-6 {
+    @include grid-it();
+}
+
+#titulo-m {
+    text-align: center;
+    padding-top: 6%;
+}

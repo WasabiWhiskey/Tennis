@@ -1,0 +1,30 @@
+#titulo-b {
+    padding-top: 6%;
+    text-align: center;
+}
+
+#tenispg {
+    max-width: 100%;
+    max-height: fit-content;
+}
+
+#cont {
+    text-align: center;
+}
+
+#lista {
+    text-align: left !important;
+}
+
+.container:has(h2) {
+    h2 {
+        text-transform: uppercase;
+    }
+}
+
+.container:has(h1) {
+    h1 {text-decoration: underline;}
+
+    background-color: $FTTI-soft;
+    
+}
